@@ -9,6 +9,8 @@ import '../../utils/text_style.dart';
 class LoginRequestAvatar6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var avatarSelect = Get.put(StateData());
+
     // ignore: avoid_print
     print("LoginRequestAvatar6 Page Rebuild Oldu");
     return WillPopScope(
@@ -59,6 +61,9 @@ class LoginRequestAvatar6 extends StatelessWidget {
                 padding: const EdgeInsets.all(2),
                 itemCount: 9,
                 itemBuilder: (BuildContext context, int index) {
+                  // ignore: avoid_print
+                  print(index);
+                  avatarSelect.avatarSelect(index);
                   return Obx(() => buildCard(index));
                 },
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -132,7 +137,7 @@ class LoginRequestAvatar6 extends StatelessWidget {
                 ),
                 elevation: 0,
                 // color: transparent,
-                child: Image.asset("assets/avatars/00${index + 1}.png", scale: 4),
+                child: Image.asset("assets/avatars/${index + 1}.png", scale: 4),
               ),
             ),
           ),
