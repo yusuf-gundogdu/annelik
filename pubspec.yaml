@@ -22,6 +22,7 @@ dependencies:
   custom_navigation_bar: ^0.8.2
   get: ^4.6.5
   percent_indicator: ^4.2.2
+  flutter_holo_date_picker: ^1.0.3
 
 
 dev_dependencies:

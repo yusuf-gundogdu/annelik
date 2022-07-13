@@ -1,11 +1,3 @@
-import 'package:annelik/pages/login_screen/login_screen_1_register.dart';
-import 'package:annelik/pages/login_screen/login_screen_2_phone.dart';
-import 'package:annelik/pages/login_screen/login_screen_3_sms.dart';
-import 'package:annelik/pages/login_screen/login_screen_4_contract.dart';
-import 'package:annelik/pages/main_screen/screen_control.dart';
-import 'package:annelik/pages/onboard_screen/onboard_1_welcome.dart';
-import 'package:annelik/pages/onboard_screen/onboard_2_question.dart';
-import 'package:annelik/pages/onboard_screen/onboard_3_exploration.dart';
 import 'package:annelik/utils/page_route.dart';
 import 'package:annelik/utils/theme.dart';
 import 'package:flutter/material.dart';
@@ -17,8 +9,9 @@ void main() {
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   runApp(
     GetMaterialApp(
-      locale: const Locale("tr"),
+      locale: Get.deviceLocale,
       debugShowCheckedModeBanner: false,
+      // translations: ,
       useInheritedMediaQuery: true,
       darkTheme: darkTheme(),
       theme: lightTheme(),

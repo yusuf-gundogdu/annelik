@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_holo_date_picker/date_picker.dart';
+import 'package:flutter_holo_date_picker/date_picker_theme.dart';
+import 'package:flutter_holo_date_picker/widget/date_picker_widget.dart';
 import 'package:get/get.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
@@ -61,26 +64,18 @@ class LoginRequestPeriod8 extends StatelessWidget {
                 children: [
                   SizedBox(
                     height: MediaQuery.of(context).copyWith().size.height / 2,
-                    child: CupertinoTheme(
-                      data: CupertinoThemeData(
-                        textTheme: CupertinoTextThemeData(
-                          dateTimePickerTextStyle:
-                          TextStyle(color: purple,fontSize: 20),
-                        ),
-                      ),
-                      child: CupertinoDatePicker(
-                        use24hFormat: true,
-                        mode: CupertinoDatePickerMode.date,
-                        onDateTimeChanged: (value) {
-                          // if (value != null && value != selectedDate)
-                          //   setState(() {
-                          //     selectedDate = value;
-                          //
-                          //   });
-                        },
-                        initialDateTime: DateTime.now(),
-                        minimumYear: 2019,
-                        maximumYear: 2050,
+                    child: DatePickerWidget(
+                      looping: false,
+                      firstDate: DateTime(2020, 1, 1),
+                      lastDate: DateTime(2050, 1, 1),
+                      initialDate: DateTime(2020, 1, 1),
+                      dateFormat: "dd/MMMM/yyyy",
+                      //     locale: DatePicker.localeFromString('he'),
+                      onChange: (DateTime newDate, _) {},
+                      locale: DatePicker.localeFromString('tr'),
+                      pickerTheme: DateTimePickerTheme(
+                        itemTextStyle: TextStyle(color: purple, fontSize: 19),
+                        dividerColor: purple10,
                       ),
                     ),
                   ),
