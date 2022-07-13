@@ -9,8 +9,6 @@ import '../../utils/text_style.dart';
 class LoginRequestAvatar6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var avatarSelect = Get.put(StateData());
-
     // ignore: avoid_print
     print("LoginRequestAvatar6 Page Rebuild Oldu");
     return WillPopScope(
@@ -63,7 +61,6 @@ class LoginRequestAvatar6 extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   // ignore: avoid_print
                   print(index);
-                  avatarSelect.avatarSelect(index);
                   return Obx(() => buildCard(index));
                 },
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -113,12 +110,15 @@ class LoginRequestAvatar6 extends StatelessWidget {
   StateData checkedIndex = Get.put(StateData());
 
   Widget buildCard(int index) {
+    var avatarSelect = Get.put(StateData());
+
     bool checked = index == checkedIndex.avatarSelect.value;
     // String name = cardNames[index];
     return GestureDetector(
       onTap: () {
         checkedIndex.avatarSelect.value = index;
         print(checkedIndex.avatarSelect.value);
+        // avatarSelect.avatarSelect(index+ 1);
       },
       child: Stack(
         children: <Widget>[

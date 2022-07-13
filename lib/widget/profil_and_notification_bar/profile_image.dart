@@ -18,7 +18,7 @@ class Profile_Image extends StatelessWidget {
       width: MediaQuery.of(context).size.width / 6,
       child: Card(
         elevation: 0,
-        child: Image.asset("assets/avatars/${avatarSelect.avatarSelect}.png", scale: 4),
+        child: Image.asset("assets/avatars/${avatarSelect.avatarSelect.value + 1}.png", scale: 4),
       ),
     );
   }
