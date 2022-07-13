@@ -1,0 +1,97 @@
+name: annelik
+description: firstVer
+
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^3.0.1
+  cupertino_icons: ^1.0.2
+  auto_size_text: ^3.0.0
+  flutter_native_splash: ^2.2.3+1
+  intl_phone_number_input: ^0.7.0+2
+  image_size_getter: ^2.1.1
+  pinput: ^2.2.11
+  custom_navigation_bar: ^0.8.2
+  get: ^4.6.5
+  percent_indicator: ^4.2.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: any
+
+
+
+flutter_icons:
+  ios: true
+  android: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icon/logo_foreground.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/splash/splash.png
+  android: true
+  ios: true
+  android_gravity: fill
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: fonts/Manrope-Bold.ttf
+        - asset: fonts/Manrope-ExtraBold.ttf
+        - asset: fonts/Manrope-ExtraLight.ttf
+        - asset: fonts/Manrope-Light.ttf
+        - asset: fonts/Manrope-Medium.ttf
+        - asset: fonts/Manrope-Regular.ttf
+        - asset: fonts/Manrope-SemiBold.ttf
+          style: italic
+  assets:
+    - assets/profilebar/notification.png
+    - assets/icon/icon.png
+    - assets/icon/detailicon.png
+    - assets/icon/topbackbutton.png
+    - assets/requestsms/getsmsbutton.png
+    - assets/loginscreen/image.png
+    - assets/loginscreen/login.png
+    - assets/loginscreen/register.png
+    - assets/loginscreen/text.png
+    - assets/loginscreen/contractimage.png
+    - assets/requestsms/text.png
+    - assets/requestsms/numbertextbox.png
+    - assets/splash/splash.png
+    - assets/onboardScreen/onboard1/image.png
+    - assets/onboardScreen/onboard1/button.png
+    - assets/onboardScreen/onboard1/subtract.png
+    - assets/onboardScreen/onboard2/image.png
+    - assets/onboardScreen/onboard2/button.png
+    - assets/onboardScreen/onboard2/subtract.png
+    - assets/onboardScreen/onboard3/image.png
+    - assets/onboardScreen/onboard3/button.png
+    - assets/onboardScreen/onboard3/subtract.png
+    - assets/bottomnavigationbar/home.png
+    - assets/bottomnavigationbar/blog.png
+    - assets/bottomnavigationbar/forum.png
+    - assets/bottomnavigationbar/more.png
+    - assets/avatars/001.png
+    - assets/avatars/002.png
+    - assets/avatars/003.png
+    - assets/avatars/004.png
+    - assets/avatars/005.png
+    - assets/avatars/006.png
+    - assets/avatars/007.png
+    - assets/avatars/008.png
+    - assets/avatars/009.png
