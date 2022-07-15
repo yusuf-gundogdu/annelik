@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shimmer/shimmer.dart';
 
 import '../../utils/color.dart';
 
@@ -25,13 +26,25 @@ class StoryBox extends StatelessWidget {
                   borderSide: BorderSide(color: black12, width: 1),
                 ),
                 child: Card(
-                    elevation: 0,
-                    color: black12,
-                    shadowColor: black,
-                    shape: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide(color: black12, width: 1),
-                    )),
+                  elevation: 0,
+                  color: black12,
+                  shadowColor: black,
+                  shape: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide(color: black12, width: 1),
+                  ),
+                  child: Shimmer.fromColors(
+                    baseColor: Colors.grey[300]!,
+                    highlightColor: Colors.grey[100]!,
+                    child: Card(
+                      margin: EdgeInsets.zero,
+                      elevation: 0.0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                  ),
+                ),
               ),
               Positioned(
                 right: 0,
