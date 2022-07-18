@@ -56,10 +56,10 @@ class LoginRequestSelectPregnantOrPeriod7 extends StatelessWidget {
               flex: 1,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children:  [
                   SizedBox(height: 20),
-                  Text("Hamileliğinin Kaçıncı Haftasındasın."),
-                  Text("Lütfen Bir Yöntem Seç."),
+                  textBodyBlackNormal_14_16("Hamileliğinin Kaçıncı Haftasındasın."),
+                  textBodyBlackNormal_14_16("Lütfen bir yöntem seç"),
                 ],
               ),
             ),
@@ -87,7 +87,7 @@ class LoginRequestSelectPregnantOrPeriod7 extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child: textBodyWhiteBold_18_20("Haftamı Biliyorum"),
+                            child: textBodyWhiteBold_16_18("Haftamı Biliyorum"),
                           ),
                         ),
                       ),
@@ -112,7 +112,7 @@ class LoginRequestSelectPregnantOrPeriod7 extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child: textBodyWhiteBold_18_20("Son Adet Tarihimi Biliyorum"),
+                            child: textBodyWhiteBold_16_18("Son Adet Tarihimi Biliyorum"),
                           ),
                         ),
                       ),

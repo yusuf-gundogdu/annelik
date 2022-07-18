@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -10,6 +12,7 @@ class StateData extends GetxController {
   final contract1 = false.obs;
   final contract2 = false.obs;
   final avatarSelect = 0.obs;
+
 
   final phoneNumberController = false.obs;
   final buildFloatingBar = 0.obs;
@@ -31,6 +34,7 @@ class StateData extends GetxController {
   }
 }
 
+
 class MyTabController extends GetxController with GetSingleTickerProviderStateMixin {
   final tabIndex = 0.obs;
   final getXController = Get.put(StateData());
@@ -50,5 +54,46 @@ class MyTabController extends GetxController with GetSingleTickerProviderStateMi
   void onClose() {
     controller.dispose();
     super.onClose();
+  }
+}
+
+
+
+class CountDownTimerState extends GetxController{
+  // Initial Count Timer value
+
+  var SCount = 1000;
+
+  //object for Timer Class
+  late Timer _timer;
+  // a Method to start the Count Down
+  void StateTimerStart(){
+    //Timer Loop will execute every 1 second, until it reach 0
+    // once counter value become 0, we store the timer using _timer.cancel()
+
+    _timer = Timer.periodic(Duration(milliseconds: 1), (timer) {
+      if(SCount > 0){
+        SCount--;
+        update();
+      }else{
+        _timer.cancel();
+      }
+    });
+  }
+  // user can set count down seconds, from TextField
+  void setnumber(var num){
+    SCount = int.parse(num);
+    update();
+  }
+  // pause the timer
+  void Pause(){
+    _timer.cancel();
+    update();
+  }
+  // reset count value to 10
+  void reset(){
+    _timer.cancel();
+    SCount = 10 ;
+    update();
   }
 }

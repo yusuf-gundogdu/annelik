@@ -35,41 +35,36 @@ class TxtPhoneNumber extends StatelessWidget {
         showFlags: false,
         selectorType: PhoneInputSelectorType.DIALOG,
         setSelectorButtonAsPrefixIcon: true,
-        leadingPadding: 0,
+        leadingPadding: 10,
       ),
       isEnabled: true,
-      hintText: "phoneNumber",
-      textStyle: TextStyle(
-        color: purple,
-        fontSize: 18.0,
-      ),
+      textStyle: TextStyle(color: purple, fontSize: 18.0, fontFamily: 'Poppins'),
       ignoreBlank: false,
       autoValidateMode: AutovalidateMode.disabled,
       textFieldController: getSmsValue.phoneNumber,
+      textAlignVertical: TextAlignVertical.center,
       keyboardType: const TextInputType.numberWithOptions(signed: true, decimal: true),
       inputBorder: const OutlineInputBorder(),
       onSaved: (PhoneNumber number) {
         print('On Saved: $number');
       },
-
-      selectorTextStyle: TextStyle(color: purple, fontSize: 16),
+      selectorTextStyle: TextStyle(color: purple, fontSize: 16, fontWeight: FontWeight.normal, fontFamily: 'Poppins'),
       initialValue: number,
       formatInput: false,
       inputDecoration: InputDecoration(
-          border: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: grey)),
-          focusedBorder: OutlineInputBorder(
-              borderRadius: const BorderRadius.all(Radius.circular(20.0)),
-              borderSide: BorderSide(
-                color: purple,
-              )),
-          enabledBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: grey)),
-          errorBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: grey)),
-          disabledBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: grey)),
-          //contentPadding:
-          //const EdgeInsets.only(left: 0, bottom: 0, top: 0, right: 0),
-          hintText: "*** *** ** **"),
-      // keyboardType:
-      // const TextInputType.numberWithOptions(signed: true, decimal: true),
+        contentPadding: const EdgeInsets.all(25.0),
+        border: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: purple)),
+        focusedBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: purple)),
+        enabledBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: purple)),
+        errorBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: purple)),
+        disabledBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: purple)),
+        filled: true,
+        fillColor: Colors.white,
+        hintText: "*** *** ** ** ",
+        hintStyle: TextStyle(color: purple, fontSize: 16, height: 1.1,fontFamily: 'Poppins'),
+
+
+      ),
     );
   }
 }

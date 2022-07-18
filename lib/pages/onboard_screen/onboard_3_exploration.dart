@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import '../../utils/color.dart';
 import '../../utils/text_style.dart';
 
-
 class OnBoard3 extends StatelessWidget {
   const OnBoard3({Key? key}) : super(key: key);
 
@@ -29,8 +28,7 @@ class OnBoard3 extends StatelessWidget {
             SizedBox(
               height: size.height / 2,
               width: double.infinity,
-              child: Image.asset("assets/onboardScreen/onboard3/image.png",
-                  scale: 4),
+              child: Image.asset("assets/onboardScreen/onboard3/image.png", scale: 4),
             ),
             const SizedBox(height: 10),
             Stack(
@@ -39,9 +37,7 @@ class OnBoard3 extends StatelessWidget {
                 Column(
                   children: [
                     Center(
-                      child: Image.asset(
-                          "assets/onboardScreen/onboard3/subtract.png",
-                          scale: 4),
+                      child: Image.asset("assets/onboardScreen/onboard3/subtract.png", scale: 4),
                     ),
                     const SizedBox(height: 60),
                   ],
@@ -53,11 +49,9 @@ class OnBoard3 extends StatelessWidget {
                       textBodyWhiteBold_22_24("Keşfetmek Hiç Bu Kadar"),
                       textBodyWhiteBold_22_24("Eğlenceli Olmamıştı"),
                       const SizedBox(height: 5),
-                      textBodyWhiteNormal_14_16(
-                          "Sağlıkla ilgili merak ettiğiniz tüm konular"),
+                      textBodyWhiteNormal_14_16("Sağlıkla ilgili merak ettiğiniz tüm konular"),
                       const SizedBox(height: 5),
-                      textBodyWhiteNormal_14_16(
-                          "keyifli ve anlaşılır bir dille bir tık uzağında"),
+                      textBodyWhiteNormal_14_16("keyifli ve anlaşılır bir dille bir tık uzağında"),
                     ],
                   ),
                 ),
@@ -68,9 +62,7 @@ class OnBoard3 extends StatelessWidget {
                       onTap: () {
                         Get.toNamed("/LoginScreen1");
                       }, // Image tapped
-                      child: Image.asset(
-                          "assets/onboardScreen/onboard3/button.png",
-                          scale: 4),
+                      child: Image.asset("assets/onboardScreen/onboard3/button.png", scale: 4),
                     ),
                   ),
                 )
@@ -80,7 +72,7 @@ class OnBoard3 extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  textBodyBlackNormal_14_16("Bir Hesabınız varmı?"),
+                  textBodyBlackNormal_14_16("Bir Hesabınız var mı?"),
                   GestureDetector(
                     onTap: () {}, // Image tapped
                     child: textBodyBlackBold_14_16(" Giriş yap"),

@@ -29,8 +29,8 @@ class LoginRequestSms3 extends StatelessWidget {
                 children: [
                   Image.asset("assets/requestsms/text.png", scale: 4),
                   const SizedBox(height: 20),
-                  const Text("Verilen numaraya sadece altı sihirli rakam"),
-                  const Text("gönderdik lütfen bunları aşağıya girin."),
+                  textBodyBlackNormal_14_16("Verilen numaraya sadece altı sihirli rakam"),
+                  textBodyBlackNormal_14_16("gönderdik lütfen bunları aşağıya girin:"),
                 ],
               ),
             ),
@@ -68,7 +68,7 @@ class LoginRequestSms3 extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child: textBodyWhiteBold_18_20("Kayıt Ol"),
+                            child: textBodyWhiteBold_16_18("Kayıt Ol"),
                           ),
                         ),
                       ),

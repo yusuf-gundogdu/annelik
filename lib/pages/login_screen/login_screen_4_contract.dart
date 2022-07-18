@@ -42,6 +42,9 @@ class LoginRequestContract4 extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Checkbox(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
                                   value: getXController.contract1.value,
                                   checkColor: white,
                                   activeColor: purple,
@@ -53,11 +56,12 @@ class LoginRequestContract4 extends StatelessWidget {
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
-                                    SizedBox(height: 10),
-                                    Text("Gizlilik Politikasını ve Kullanım"),
-                                    Text("Şartlarını kabul ediyorum"),
-                                    SizedBox(height: 10),
+                                  children:  [
+                                    const SizedBox(height: 10),
+                                    textBodyBlackNormal_14_16("Gizlilik Politikasını ve Kullanım"),
+                                    textBodyBlackNormal_14_16("Şartlarını kabul ediyorum."),
+
+                                    const SizedBox(height: 10),
                                   ],
                                 ),
                               ],
@@ -75,6 +79,9 @@ class LoginRequestContract4 extends StatelessWidget {
                               children: [
                                 Checkbox(
                                   value: getXController.contract2.value,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
                                   checkColor: white,
                                   activeColor: purple,
                                   hoverColor: purple,
@@ -85,14 +92,14 @@ class LoginRequestContract4 extends StatelessWidget {
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
-                                    SizedBox(height: 10),
-                                    Text("Annelik Hikayesi uygulaması "),
-                                    Text("işlevlerinin sağlanması amacıyla "),
-                                    Text("kişisel sağlık bilgilerimin işlenmesini "),
-                                    Text("kabul ediyorum. Daha fazlası için "),
-                                    Text("Gizlilik Politikamıza göz atın"),
-                                    SizedBox(height: 10),
+                                  children:  [
+                                    const SizedBox(height: 10),
+                                    textBodyBlackNormal_14_16("Annelik Hikayesi uygulaması "),
+                                    textBodyBlackNormal_14_16("işlevlerinin sağlanması amacıyla "),
+                                    textBodyBlackNormal_14_16("kişisel sağlık bilgilerimin işlenmesini "),
+                                    textBodyBlackNormal_14_16("kabul ediyorum. Daha fazlası için "),
+                                    textBodyBlackNormal_14_16("Gizlilik Politikamıza göz atın"),
+                                    const SizedBox(height: 10),
                                   ],
                                 ),
                               ],
@@ -134,7 +141,7 @@ class LoginRequestContract4 extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child: textBodyWhiteBold_18_20("İleri"),
+                            child: textBodyWhiteBold_16_18("İleri"),
                           ),
                         ),
                       ),

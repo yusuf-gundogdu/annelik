@@ -7,7 +7,6 @@ import '../../utils/color.dart';
 import '../../utils/text_style.dart';
 
 class LoginRequestPregnant8 extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     // ignore: avoid_print
@@ -53,7 +52,7 @@ class LoginRequestPregnant8 extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            textBodyPurpleBold_18_20("Kaç Haftalık Hamilesin"),
+            textBodyPurpleBold_22_24("Kaç Haftalık Hamilesin"),
             Expanded(
               flex: 3,
               child: Column(
@@ -62,12 +61,18 @@ class LoginRequestPregnant8 extends StatelessWidget {
                   SizedBox(
                     height: MediaQuery.of(context).copyWith().size.height / 2,
                     child: CupertinoPicker(
+                      selectionOverlay: CupertinoPickerDefaultSelectionOverlay(background: purple10.withOpacity(0.5)),
                       onSelectedItemChanged: (int value) {
-                        print("${value + 1} Hafta");
+                        print("${value + 1} hafta");
                       },
                       itemExtent: 64,
                       children: [
-                        for (int i = 0; i < 50; i++) Center(child: Text("${i + 1} Hafta", style: TextStyle(fontSize: 32, color: purple))),
+                        for (int i = 0; i < 50; i++)
+                          Center(
+                              child: Text(
+                            "${i + 1}  hafta",
+                            style: TextStyle(color: purple, fontWeight: FontWeight.w600, fontFamily: 'Poppins', fontSize: 22),
+                          )),
                       ],
                     ),
                   ),
@@ -84,7 +89,7 @@ class LoginRequestPregnant8 extends StatelessWidget {
                     child: GestureDetector(
                       onTap: () {
                         FocusManager.instance.primaryFocus?.unfocus();
-                         Get.toNamed("/LoginRequestBirthDay9");
+                        Get.toNamed("/LoginRequestBirthDay9");
                       },
                       child: Container(
                         height: 60.0,
@@ -97,7 +102,7 @@ class LoginRequestPregnant8 extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child: textBodyWhiteBold_18_20("İleri"),
+                            child: textBodyWhiteBold_16_18("İleri"),
                           ),
                         ),
                       ),

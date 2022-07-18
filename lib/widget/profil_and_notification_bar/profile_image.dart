@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../data/state_data.dart';
-import '../../utils/color.dart';
 
 class Profile_Image extends StatelessWidget {
   const Profile_Image({

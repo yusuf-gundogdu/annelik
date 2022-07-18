@@ -21,18 +21,14 @@ class Name extends StatelessWidget {
         controller: name,
         style: TextStyle(color: purple),
         decoration: InputDecoration(
-          border: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: grey)),
-          focusedBorder: OutlineInputBorder(
-              borderRadius: const BorderRadius.all(Radius.circular(20.0)),
-              borderSide: BorderSide(
-                color: purple,
-              )),
-          enabledBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: grey)),
-          errorBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: grey)),
-          disabledBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: grey)),
+          border: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: purple)),
+          focusedBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: purple)),
+          enabledBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: purple)),
+          errorBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: purple)),
+          disabledBorder: OutlineInputBorder(borderRadius: const BorderRadius.all(Radius.circular(20.0)), borderSide: BorderSide(color: purple)),
           contentPadding: const EdgeInsets.only(left: 20, bottom: 20, top: 20, right: 20),
           hintText: hintText,
-          hintStyle: TextStyle(color: grey),
+          hintStyle: TextStyle(color: grey, fontWeight: FontWeight.normal, fontFamily: 'Poppins')
         ),
       ),
     );

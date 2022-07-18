@@ -47,7 +47,7 @@ class OnBoard2 extends StatelessWidget {
                     children: [
                       const SizedBox(height: 10),
                       textBodyWhiteBold_22_24("Bütün Soruların"),
-                      textBodyWhiteBold_22_24("Yanıtları Burada"),
+                      textBodyWhiteBold_22_24("Yanıtları Burada!"),
                       const SizedBox(height: 5),
                       textBodyWhiteNormal_14_16("Aklına takılan tüm soruları istersen"),
                       const SizedBox(height: 5),
@@ -75,7 +75,7 @@ class OnBoard2 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   textBodyBlackNormal_14_16(
-                    "Bir Hesabınız varmı?",
+                    "Bir Hesabınız var mı?",
                   ),
                   GestureDetector(
                     onTap: () {}, // Image tapped

@@ -43,6 +43,7 @@ class LoginRequestPhone2 extends StatelessWidget {
                     child: Container(
                       alignment: Alignment.centerLeft,
                       height: 60.0,
+
                       child: TxtPhoneNumber(number: number),
                     ),
                   ),
@@ -69,7 +70,7 @@ class LoginRequestPhone2 extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child: textBodyWhiteBold_18_20("SMS Kodu Alın"),
+                            child: textBodyWhiteBold_16_18("SMS Kodu Alın"),
                           ),
                         ),
                       ),

@@ -55,8 +55,8 @@ class LoginRequestPeriod8 extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            textBodyPurpleBold_18_20("Kaç Haftalık Hamilesin"),
-            // const SizedBox(height: 20),
+            textBodyPurpleBold_22_24("Hatırladığın son regl"),
+            textBodyPurpleBold_22_24("Tarihini Girermisin"),
             Expanded(
               flex: 3,
               child: Column(
@@ -70,12 +70,11 @@ class LoginRequestPeriod8 extends StatelessWidget {
                       lastDate: DateTime(2050, 1, 1),
                       initialDate: DateTime(2020, 1, 1),
                       dateFormat: "dd/MMMM/yyyy",
-                      //     locale: DatePicker.localeFromString('he'),
                       onChange: (DateTime newDate, _) {},
                       locale: DatePicker.localeFromString('tr'),
                       pickerTheme: DateTimePickerTheme(
-                        itemTextStyle: TextStyle(color: purple, fontSize: 19),
-                        dividerColor: purple10,
+                        itemTextStyle: TextStyle(color: purple, fontWeight: FontWeight.w600, fontFamily: 'Poppins',fontSize: 22),
+                        dividerColor: transparent,
                       ),
                     ),
                   ),
@@ -105,7 +104,7 @@ class LoginRequestPeriod8 extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child: textBodyWhiteBold_18_20("İleri"),
+                            child: textBodyWhiteBold_16_18("İleri"),
                           ),
                         ),
                       ),

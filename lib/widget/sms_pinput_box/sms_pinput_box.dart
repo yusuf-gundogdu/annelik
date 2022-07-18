@@ -7,8 +7,7 @@ import '../../utils/color.dart';
 
 Widget txtSendSms() {
   final getXController = Get.put(StateData());
-  getXController.getSmsValue.value.text =="";
-
+  getXController.getSmsValue.value.text == "";
 
   return SizedBox(
     height: 56,
@@ -21,7 +20,7 @@ Widget txtSendSms() {
         height: 40,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color:  grey),
+          border: Border.all(color: grey),
         ),
       ),
       showCursor: true,
@@ -40,66 +39,56 @@ Widget txtSendSms() {
         ],
       ),
       focusedPinTheme: PinTheme(
-        textStyle:  TextStyle(
-            fontSize: 20,
-            color: purple,
-            fontWeight: FontWeight.w600),
+        textStyle: textStyle(),
         width: 40,
         height: 40,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color:  purple),
-        ),
-      ).copyWith(
-        height: 50,
-        width: 50,
-        decoration: PinTheme(
-          textStyle:  TextStyle(
-              fontSize: 20,
-              color: purple,
-              fontWeight: FontWeight.w600),
-          width: 40,
-          height: 40,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all(color:  purple),
-          ),
-        ).decoration!.copyWith(
           borderRadius: BorderRadius.circular(8),
           border: Border.all(color: purple),
         ),
+      ).copyWith(
+        height: 50,
+        width: 50,
+        decoration: PinTheme(
+          textStyle: textStyle(),
+          width: 40,
+          height: 40,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(color: purple),
+          ),
+        ).decoration!.copyWith(
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: purple),
+            ),
       ),
       submittedPinTheme: PinTheme(
-        textStyle:  TextStyle(
-            fontSize: 20,
-            color: purple,
-            fontWeight: FontWeight.w600),
+        textStyle: textStyle(),
         width: 40,
         height: 40,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color:  purple),
+          border: Border.all(color: purple),
         ),
       ).copyWith(
         height: 50,
         width: 50,
         decoration: PinTheme(
-          textStyle:  TextStyle(
-              fontSize: 20,
-              color: purple,
-              fontWeight: FontWeight.w600),
+          textStyle: textStyle(),
           width: 40,
           height: 40,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
-            border: Border.all(color:  purple),
+            border: Border.all(color: purple),
           ),
         ).decoration!.copyWith(
-          color: const Color.fromRGBO(0, 246, 0, 0),
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color:  purple),
-        ),
+              color: const Color.fromRGBO(0, 246, 0, 0),
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: purple),
+            ),
       ),
     ),
   );
 }
+
+TextStyle textStyle() => TextStyle(fontSize: 18, color: purple, fontWeight: FontWeight.w600, fontFamily: 'Poppins');

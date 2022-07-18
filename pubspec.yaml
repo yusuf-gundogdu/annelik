@@ -26,6 +26,7 @@ dependencies:
   shimmer: ^2.0.0
 
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -51,15 +52,26 @@ flutter_native_splash:
 flutter:
   uses-material-design: true
   fonts:
-    - family: Manrope
+    - family: Poppins
       fonts:
-        - asset: fonts/Manrope-Bold.ttf
-        - asset: fonts/Manrope-ExtraBold.ttf
-        - asset: fonts/Manrope-ExtraLight.ttf
-        - asset: fonts/Manrope-Light.ttf
-        - asset: fonts/Manrope-Medium.ttf
-        - asset: fonts/Manrope-Regular.ttf
-        - asset: fonts/Manrope-SemiBold.ttf
+        - asset: fonts/Poppins-Black.ttf
+        - asset: fonts/Poppins-BlackItalic.ttf
+        - asset: fonts/Poppins-Bold.ttf
+        - asset: fonts/Poppins-BoldItalic.ttf
+        - asset: fonts/Poppins-ExtraBold.ttf
+        - asset: fonts/Poppins-ExtraBoldItalic.ttf
+        - asset: fonts/Poppins-ExtraLight.ttf
+        - asset: fonts/Poppins-ExtraLightItalic.ttf
+        - asset: fonts/Poppins-Italic.ttf
+        - asset: fonts/Poppins-Light.ttf
+        - asset: fonts/Poppins-LightItalic.ttf
+        - asset: fonts/Poppins-Medium.ttf
+        - asset: fonts/Poppins-MediumItalic.ttf
+        - asset: fonts/Poppins-Regular.ttf
+        - asset: fonts/Poppins-SemiBold.ttf
+        - asset: fonts/Poppins-SemiBoldItalic.ttf
+        - asset: fonts/Poppins-Thin.ttf
+        - asset: fonts/Poppins-ThinItalic.ttf
           style: italic
   assets:
     - assets/profilebar/notification.png
@@ -97,3 +109,11 @@ flutter:
     - assets/avatars/7.png
     - assets/avatars/8.png
     - assets/avatars/9.png
+    - assets/otherpage/alisverislistesi.png
+    - assets/otherpage/bebekisimleri.png
+    - assets/otherpage/bizidegerlendir.png
+    - assets/otherpage/geribildirim.png
+    - assets/otherpage/hastahanecantasi.png
+    - assets/otherpage/kasilmasayar.png
+    - assets/otherpage/kaydedilenler.png
+    - assets/otherpage/profile.png

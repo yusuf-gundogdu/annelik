@@ -53,8 +53,9 @@ class LoginRequestBirthDay9 extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            textBodyPurpleBold_18_20("Tahminleri daha iyi hale getirebilmek için"),
-            textBodyPurpleBold_18_20("doğum tarihinizi giriniz."),
+            textBodyPurpleBold_22_24("Tahminleri daha iyi hale"),
+            textBodyPurpleBold_22_24("getirebilmek için doğum"),
+            textBodyPurpleBold_22_24("tarihinizi giriniz."),
             // const SizedBox(height: 20),
             Expanded(
               flex: 3,
@@ -64,12 +65,18 @@ class LoginRequestBirthDay9 extends StatelessWidget {
                   SizedBox(
                     height: MediaQuery.of(context).copyWith().size.height / 2,
                     child: CupertinoPicker(
+                      selectionOverlay: CupertinoPickerDefaultSelectionOverlay(background: purple10.withOpacity(0.5)),
                       onSelectedItemChanged: (int value) {
                         print("${value + 1951}");
                       },
                       itemExtent: 64,
                       children: [
-                        for (int i = 1959; i < 2010; i++) Center(child: Text("${i + 1}", style: TextStyle(fontSize: 32, color: purple))),
+                        for (int i = 1969; i < 2010; i++)
+                          Center(
+                              child: Text(
+                            "${i + 1}",
+                            style: TextStyle(color: purple, fontWeight: FontWeight.w600, fontFamily: 'Poppins', fontSize: 22),
+                          )),
                       ],
                     ),
                   ),
@@ -99,7 +106,7 @@ class LoginRequestBirthDay9 extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child: textBodyWhiteBold_18_20("İleri"),
+                            child: textBodyWhiteBold_16_18("İleri"),
                           ),
                         ),
                       ),

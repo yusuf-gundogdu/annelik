@@ -92,7 +92,7 @@ class LoginRequestAvatar6 extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child: textBodyWhiteBold_18_20("Devam Et"),
+                            child: textBodyWhiteBold_16_18("İleri"),
                           ),
                         ),
                       ),
@@ -147,11 +147,8 @@ class LoginRequestAvatar6 extends StatelessWidget {
             child: Offstage(
               offstage: !checked,
               child: Container(
-                decoration: BoxDecoration(color: Colors.white, border: Border.all(width: 2), shape: BoxShape.circle),
-                child: const Icon(
-                  Icons.check,
-                  color: Colors.green,
-                ),
+                decoration: BoxDecoration(color: Colors.white, border: Border.all(width: 2, color: purple), shape: BoxShape.circle),
+                child: Icon(Icons.check, color: purple),
               ),
             ),
           ),

@@ -63,7 +63,7 @@ class LoginRequestName5 extends StatelessWidget {
                             ),
                           ),
                           child: Center(
-                            child: textBodyWhiteBold_18_20("Devam Et"),
+                            child: textBodyWhiteBold_16_18("İleri"),
                           ),
                         ),
                       ),

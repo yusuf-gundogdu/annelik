@@ -51,7 +51,7 @@ class OnBoard1 extends StatelessWidget {
                       textBodyWhiteBold_22_24("Ailemize"),
                       textBodyWhiteBold_22_24("Hoş Geldin"),
                       const SizedBox(height: 5),
-                      textBodyWhiteNormal_14_16("Kendi hikâyeni yazmaya hazırsan"),
+                      textBodyWhiteNormal_14_16("Kendi hikayeni yazmaya hazırsan"),
                       const SizedBox(height: 5),
                       textBodyWhiteNormal_14_16("Hadi Başlayalım!"),
                     ],
@@ -82,7 +82,7 @@ class OnBoard1 extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  textBodyBlackNormal_14_16("Bir Hesabınız varmı?"),
+                  textBodyBlackNormal_14_16("Bir Hesabınız var mı?"),
                   GestureDetector(
                     onTap: () {
                       //print("Giriş Yap");
