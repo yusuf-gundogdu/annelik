@@ -14,7 +14,6 @@ class LoginRequestCompleteProfile10 extends StatelessWidget {
 
   void initState() {
     _textEditingController.addListener(() => TimerState.setnumber(_textEditingController.text));
-
   }
 
   @override
@@ -43,14 +42,13 @@ class LoginRequestCompleteProfile10 extends StatelessWidget {
               child: SizedBox(
                 height: MediaQuery.of(context).copyWith().size.height / 2,
                 child: CircularPercentIndicator(
-                  center: GetBuilder<CountDownTimerState>(
-                      builder: (_) => Text('${TimerState.SCount}')),
+                  center: GetBuilder<CountDownTimerState>(builder: (_) => Text('${TimerState.SCount} %', style: TextStyle(color: purple, fontWeight: FontWeight.w600, fontFamily: 'Poppins'))),
                   animationDuration: 2000,
                   radius: 100.0,
                   lineWidth: 10.0,
                   animation: true,
                   onAnimationEnd: () {
-                    Get.toNamed("/LoginRequestBirthDay9");
+                    Get.toNamed("/ScreenControllerPage");
                   },
                   percent: 1.00,
                   animateFromLastPercent: true,

@@ -7,7 +7,21 @@ import '../../data/state_data.dart';
 import '../../utils/color.dart';
 import '../../utils/text_style.dart';
 
+
+
+
+
 class LoginRequestBirthDay9 extends StatelessWidget {
+  late DateTime selectedDate;
+  final CountDownTimerState TimerState = Get.put(CountDownTimerState());
+  final _textEditingController = TextEditingController();
+
+  void initState() {
+    TimerState.reset();
+
+    _textEditingController.addListener(() => TimerState.setnumber(_textEditingController.text));
+  }
+
   @override
   Widget build(BuildContext context) {
     // ignore: avoid_print

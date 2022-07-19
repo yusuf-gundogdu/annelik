@@ -62,7 +62,7 @@ class MyTabController extends GetxController with GetSingleTickerProviderStateMi
 class CountDownTimerState extends GetxController{
   // Initial Count Timer value
 
-  var SCount = 1000;
+  var SCount = 0;
 
   //object for Timer Class
   late Timer _timer;
@@ -71,9 +71,10 @@ class CountDownTimerState extends GetxController{
     //Timer Loop will execute every 1 second, until it reach 0
     // once counter value become 0, we store the timer using _timer.cancel()
 
-    _timer = Timer.periodic(Duration(milliseconds: 1), (timer) {
-      if(SCount > 0){
-        SCount--;
+    _timer = Timer.periodic(Duration(milliseconds: 20), (timer) {
+      if(SCount < 100){
+
+        SCount++;
         update();
       }else{
         _timer.cancel();
@@ -86,14 +87,11 @@ class CountDownTimerState extends GetxController{
     update();
   }
   // pause the timer
-  void Pause(){
-    _timer.cancel();
-    update();
-  }
+
   // reset count value to 10
   void reset(){
     _timer.cancel();
-    SCount = 10 ;
+    SCount = 0 ;
     update();
   }
 }
