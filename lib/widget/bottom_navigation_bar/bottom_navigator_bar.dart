@@ -20,12 +20,13 @@ class BuildFloatingBarState extends StatelessWidget {
       () => SizedBox(
         height: MediaQuery.of(context).size.height / 7,
         child: Padding(
-          padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
+          padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
           child: CustomNavigationBar(
             scaleFactor: 0.5,
             iconSize: 30.0,
             blurEffect: false,
             scaleCurve: Curves.fastLinearToSlowEaseIn,
+
             bubbleCurve: Curves.linear,
             elevation: 0,
             strokeColor: white10,
