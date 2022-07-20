@@ -2,6 +2,17 @@ import 'package:flutter/material.dart';
 
 Color purple = const Color(0XFF8167FC);
 Color purple10 = const Color(0XFFCDC2FF);
+Color purple20 = const Color(0XFFF2F0FF);
+Color red10 = const Color(0XFFF7A3AD);
+Color red20 = const Color(0XFFFFEBED);
+Color blue10 = const Color(0XFF00A3C5);
+Color blue20 = const Color(0XFFECFBFF);
+Color orange10 = const Color(0XFFFB7B05);
+Color orange20 = const Color(0XFFFFEFE6);
+Color yellow10 = const Color(0XFFFFCD00);
+Color yellow20 = const Color(0XFFFEF7DC);
+Color green10 = const Color(0XFF55D1A0);
+Color green20 = const Color(0XFFE9FBF4);
 Color white = Colors.white;
 Color white10 = Colors.white10;
 Color black = Colors.black;

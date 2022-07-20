@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../data/state_data.dart';
 import '../../utils/color.dart';
 
 class Name extends StatelessWidget {

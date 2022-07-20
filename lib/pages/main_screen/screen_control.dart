@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -19,19 +18,24 @@ class ScreenControllerPage extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: avoid_print
     print("ScreenControllerPage Page Rebuild Oldu");
-    return Scaffold(
-      bottomNavigationBar: BuildFloatingBarState(),
-      backgroundColor: white,
-      extendBody: true,
-      body: TabBarView(
-        physics: const BouncingScrollPhysics(),
-        controller: _tabx.controller,
-        children: [
-          MainScreen(),
-          BlogScreen(),
-          ForumSceen(),
-          MoreScreen(),
-        ],
+    return WillPopScope(
+      onWillPop: () {
+        return Future.value(false);
+      },
+      child: Scaffold(
+        bottomNavigationBar: BuildFloatingBarState(),
+        backgroundColor: white,
+        extendBody: true,
+        body: TabBarView(
+          physics: const BouncingScrollPhysics(),
+          controller: _tabx.controller,
+          children: [
+            MainScreen(),
+            BlogScreen(),
+            ForumSceen(),
+            MoreScreen(),
+          ],
+        ),
       ),
     );
   }

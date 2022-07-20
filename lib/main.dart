@@ -12,7 +12,6 @@ void main() {
     GetMaterialApp(
       locale: Get.deviceLocale,
       debugShowCheckedModeBanner: false,
-      // translations: ,
       useInheritedMediaQuery: true,
       darkTheme: darkTheme(),
       theme: lightTheme(),
