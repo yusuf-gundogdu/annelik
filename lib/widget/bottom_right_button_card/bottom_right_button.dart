@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
-import '../../utils/color.dart';
 import 'drawing.dart';
 
 class BottomRightBottomCard extends StatelessWidget {
