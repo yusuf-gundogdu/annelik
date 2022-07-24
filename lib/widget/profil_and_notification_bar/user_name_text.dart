@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 import '../../data/state_data.dart';
 
-class User_Name_Text extends StatelessWidget {
-  const User_Name_Text({
+class UserNameText extends StatelessWidget {
+  const UserNameText({
     Key? key,
   }) : super(key: key);
 

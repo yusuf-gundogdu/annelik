@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 import '../../data/state_data.dart';
 
-class Profile_Image extends StatelessWidget {
-  const Profile_Image({
+class ProfileImage extends StatelessWidget {
+  const ProfileImage({
     Key? key,
   }) : super(key: key);
 

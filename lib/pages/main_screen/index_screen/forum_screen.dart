@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/color.dart';
-import '../../widget/profil_and_notification_bar/profil_and_notification_bar.dart';
-import '../../widget/story_box/story_box.dart';
+import '../../../utils/color.dart';
+import '../../../widget/profil_and_notification_bar/profil_and_notification_bar.dart';
+import '../../../widget/story_box/story_box.dart';
 
 
-class BlogScreen extends StatelessWidget {
+class ForumSceen extends StatelessWidget {
   List<String> countries = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBody: true,
+      backgroundColor: white,
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -54,7 +54,7 @@ class BlogScreen extends StatelessWidget {
             Container(
               height: 500,
               child: Center(
-                child: Text("Blog Page"),
+                child: Text("Forum Page"),
               ),
             ),
           ],
