@@ -25,6 +25,8 @@ class RateUsScreen extends StatelessWidget {
                     onTap: () async {
                       Get.back();
                     }, // Image tapped
+
+
                     child: Image.asset("assets/icon/topbackbutton.png", scale: 4),
                   ),
                 ),
