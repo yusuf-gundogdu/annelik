@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../data/state_data.dart';
-import '../../utils/color.dart';
-import '../../widget/bottom_navigation_bar/bottom_navigator_bar.dart';
+import '../../../data/state_data.dart';
+import '../../../utils/color.dart';
+import '../../../widget/bottom_navigation_bar/bottom_navigator_bar.dart';
 import 'blog_screen.dart';
 import 'forum_screen.dart';
 import 'main_screen.dart';

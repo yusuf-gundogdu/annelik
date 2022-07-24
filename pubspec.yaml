@@ -75,6 +75,7 @@ flutter:
           style: italic
   assets:
     - assets/profilebar/notification.png
+    - assets/profilebar/find.png
     - assets/icon/icon.png
     - assets/icon/detailicon.png
     - assets/icon/topbackbutton.png

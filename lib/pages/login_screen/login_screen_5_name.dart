@@ -33,7 +33,7 @@ class LoginRequestName5 extends StatelessWidget {
               ),
             ),
             Name(name: firstName.firstName, hintText: "İsim"),
-            const SizedBox(height: 50),
+            const SizedBox(height: 20),
             Name(name: lastName.lastName, hintText: "Soyisim"),
             Expanded(
               flex: 2,
@@ -45,11 +45,13 @@ class LoginRequestName5 extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
                     child: GestureDetector(
                       onTap: () {
-                        if (firstName.firstName.value.text != "" && lastName.lastName.value.text != "") {
+                        if (firstName.firstName.value.text != "" &&
+                            lastName.lastName.value.text != "") {
                           FocusManager.instance.primaryFocus?.unfocus();
                           Get.toNamed("/LoginRequestAvatar6");
                         } else {
-                          Get.snackbar("Lütfen", " İsim ve Soyisim  bilgilerinizi Giriniz");
+                          Get.snackbar("Lütfen",
+                              " İsim ve Soyisim  bilgilerinizi Giriniz");
                         }
                       },
                       child: Container(

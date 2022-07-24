@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 import '../../utils/color.dart';
 
-class UserNotification extends StatelessWidget {
-  const UserNotification({
+class UserFind extends StatelessWidget {
+  const UserFind({
     Key? key,
   }) : super(key: key);
 
@@ -15,7 +15,7 @@ class UserNotification extends StatelessWidget {
       width: MediaQuery.of(context).size.width / 7,
       child: GestureDetector(
         onTap: () {
-          Get.snackbar("", "Bildirim Bulunmamaktadır.");
+          Get.snackbar("Arama servisleri şuan çalışmamaktadır.", "Diğer menuleri kontrol edebilirsiniz...");
         },
         child: Card(
           elevation: 0,
@@ -25,7 +25,7 @@ class UserNotification extends StatelessWidget {
           //   borderSide: BorderSide(color: black12, width: 1),
           // ),
           child: Image.asset(
-            "assets/profilebar/notification.png",
+            "assets/profilebar/find.png",
             scale: 3,
             color: black12,
           ),

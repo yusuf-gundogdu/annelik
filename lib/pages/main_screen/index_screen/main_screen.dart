@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../data/state_data.dart';
-import '../../utils/color.dart';
-import '../../widget/bottom_right_button_card/bottom_right_button.dart';
-import '../../widget/profil_and_notification_bar/profil_and_notification_bar.dart';
-import '../../widget/story_box/story_box.dart';
+import '../../../data/state_data.dart';
+import '../../../utils/color.dart';
+import '../../../widget/bottom_right_button_card/bottom_right_button.dart';
+import '../../../widget/profil_and_notification_bar/profil_and_notification_bar.dart';
+import '../../../widget/story_box/story_box.dart';
 
 
 
